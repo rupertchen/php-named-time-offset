@@ -52,7 +52,7 @@ class Factory {
    * @return Factory
    */
   public static function CreateDefault() {
-    $configs = require(__DIR__ . '/offset_configs.php');
+    $configs = require(__DIR__ . '/offset_configs.inc');
     return new Factory($configs);
   }
 }
