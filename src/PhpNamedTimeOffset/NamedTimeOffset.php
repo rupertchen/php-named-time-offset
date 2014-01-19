@@ -19,7 +19,7 @@ class NamedTimeOffset {
   public function __construct(array $conf) {
     $this->_id = $conf['id'];
     $this->_name = $conf['name'];
-    $this->_abbreviation = $conf['abbreviation'];
+    $this->_abbreviation = $conf['short'];
     $this->_offset = $conf['offset'];
   }
 

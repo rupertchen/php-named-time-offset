@@ -2,7 +2,7 @@
   0 =>
       array (
         'id' => 1,
-        'name' => 'dummy-long-name',
+        'name' => 'dummy-long-name-1',
         'abbreviation' => 'd1',
         'offset' => 3600,
         'difference' => '+01:00',

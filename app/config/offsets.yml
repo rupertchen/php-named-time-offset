@@ -1,0 +1,17 @@
+offsets:
+  1:
+    name:  dummy-long-name-1
+    short: d1
+    offset: 3600
+  5:
+    name: dummy-long-name-2
+    short: d2
+    offset: 7200
+  42:
+    name: Pacific Standard Time
+    short: PST
+    offset: -28800
+  43:
+    name: Pacific Daylight Time
+    short: PDT
+    offset: -25200

@@ -1,5 +1,4 @@
-php-named-time-offset
-=====================
+# php-named-time-offset
 
 PHP library for named time offsets
 
@@ -18,5 +17,9 @@ and remember which offset for later display. Although abbreviations are the
 most common way for people to work with offsets, they are not unique. The
 full offset names are unique, but they are verbose and inefficient for storage.
 
+## How To Run The Tests
+From the command line, run:
+
+    $ ./bin/phpunit
 
 [tzdata]: http://en.wikipedia.org/wiki/Tz_database
