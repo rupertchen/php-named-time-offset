@@ -1,6 +1,7 @@
 <?php
 
 namespace PhpNamedTimeOffset;
+
 use InvalidArgumentException;
 
 /**
@@ -18,7 +19,7 @@ class OffsetParser {
    * @return int
    */
   public function toSeconds($source) {
-    if (!is_string($source)) {
+    if (!(is_string($source) || is_int($source))) {
       throw new InvalidArgumentException(sprintf('Invalid offset type (%s)', gettype($source)));
     }
 

@@ -1,43 +1,45 @@
+# TODO: Group entries by offset
+# TODO: Keep DST and other variants with the standard
 offsets:
   1:
     name: Pacific Daylight Time
-    short: PST
+    short: PDT
     offset: -7
   2:
     name: Pacific Standard Time
-    short: PDT
+    short: PST
     offset: -8
   3:
     name: Eastern Daylight Time
-    short: EST
+    short: EDT
     offset: -4
   4:
     name: Eastern Standard Time
-    short: EDT
+    short: EST
     offset: -5
   5:
     name: Central Daylight Time
-    short: CST
+    short: CDT
     offset: -5
   6:
     name: Central Standard Time
-    short: CDT
+    short: CST
     offset: -6
   7:
     name: Mountain Daylight Time
-    short: MST
+    short: MDT
     offset: -6
   8:
     name: Mountain Standard Time
-    short: MDT
+    short: MST
     offset: -7
   9:
     name: Alaska Daylight Time
-    short: AKST
+    short: AKDT
     offset: -8
   10:
     name: Alaska Standard Time
-    short: AKDT
+    short: AKST
     offset: -9
   11:
     name: Hawaii-Aleutian Daylight Time

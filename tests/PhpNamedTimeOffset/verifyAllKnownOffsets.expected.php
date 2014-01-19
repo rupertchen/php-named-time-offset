@@ -3,7 +3,7 @@
       array (
         'id' => 1,
         'name' => 'Pacific Daylight Time',
-        'abbreviation' => 'PST',
+        'abbreviation' => 'PDT',
         'offset' => -25200,
         'difference' => '-07:00',
       ),
@@ -11,7 +11,7 @@
       array (
         'id' => 2,
         'name' => 'Pacific Standard Time',
-        'abbreviation' => 'PDT',
+        'abbreviation' => 'PST',
         'offset' => -28800,
         'difference' => '-08:00',
       ),
@@ -19,7 +19,7 @@
       array (
         'id' => 3,
         'name' => 'Eastern Daylight Time',
-        'abbreviation' => 'EST',
+        'abbreviation' => 'EDT',
         'offset' => -14400,
         'difference' => '-04:00',
       ),
@@ -27,7 +27,7 @@
       array (
         'id' => 4,
         'name' => 'Eastern Standard Time',
-        'abbreviation' => 'EDT',
+        'abbreviation' => 'EST',
         'offset' => -18000,
         'difference' => '-05:00',
       ),
@@ -35,7 +35,7 @@
       array (
         'id' => 5,
         'name' => 'Central Daylight Time',
-        'abbreviation' => 'CST',
+        'abbreviation' => 'CDT',
         'offset' => -18000,
         'difference' => '-05:00',
       ),
@@ -43,7 +43,7 @@
       array (
         'id' => 6,
         'name' => 'Central Standard Time',
-        'abbreviation' => 'CDT',
+        'abbreviation' => 'CST',
         'offset' => -21600,
         'difference' => '-06:00',
       ),
@@ -51,7 +51,7 @@
       array (
         'id' => 7,
         'name' => 'Mountain Daylight Time',
-        'abbreviation' => 'MST',
+        'abbreviation' => 'MDT',
         'offset' => -21600,
         'difference' => '-06:00',
       ),
@@ -59,7 +59,7 @@
       array (
         'id' => 8,
         'name' => 'Mountain Standard Time',
-        'abbreviation' => 'MDT',
+        'abbreviation' => 'MST',
         'offset' => -25200,
         'difference' => '-07:00',
       ),
@@ -67,7 +67,7 @@
       array (
         'id' => 9,
         'name' => 'Alaska Daylight Time',
-        'abbreviation' => 'AKST',
+        'abbreviation' => 'AKDT',
         'offset' => -28800,
         'difference' => '-08:00',
       ),
@@ -75,7 +75,7 @@
       array (
         'id' => 10,
         'name' => 'Alaska Standard Time',
-        'abbreviation' => 'AKDT',
+        'abbreviation' => 'AKST',
         'offset' => -32400,
         'difference' => '-09:00',
       ),

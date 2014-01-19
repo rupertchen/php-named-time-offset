@@ -39,7 +39,10 @@ class OffsetParserTest extends \PHPUnit_Framework_TestCase {
       array('-8:35', -30900),
       // additional spaces
       array('   -03', -10800),
-      array('4     ', 14400)
+      array('4     ', 14400),
+      // ints
+      array(8, 28800),
+      array(-8, -28800)
     );
   }
 
@@ -58,7 +61,8 @@ class OffsetParserTest extends \PHPUnit_Framework_TestCase {
     return array(
       array(''),
       array('this-is-not-parsible'),
-      array(array())
+      array(array()),
+      array(1.5)
     );
   }
 
