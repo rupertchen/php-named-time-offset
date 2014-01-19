@@ -22,17 +22,17 @@ class FactoryTest extends \PHPUnit_Framework_TestCase {
     return array(
       1 => array(
         'name' => 'dummy 1',
-        'short' => 'd1',
+        'abbreviation' => 'd1',
         'offset' => 0
       ),
       2 => array(
         'name' => 'dummy 2',
-        'short' => 'd2',
+        'abbreviation' => 'd2',
         'offset' => 3600
       ),
       3 => array(
         'name' => 'dummy 3',
-        'short' => 'd3',
+        'abbreviation' => 'd3',
         'offset' => 7200
       )
     );

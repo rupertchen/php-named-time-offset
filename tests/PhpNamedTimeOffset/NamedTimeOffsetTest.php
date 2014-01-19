@@ -18,7 +18,7 @@ class NamedTimeOffsetTest extends \PHPUnit_Framework_TestCase {
     return array(
       'id' => 0,
       'name' => 'full-name',
-      'short' => 'xxx',
+      'abbreviation' => 'xxx',
       'offset' => 0
     );
   }
@@ -51,7 +51,7 @@ class NamedTimeOffsetTest extends \PHPUnit_Framework_TestCase {
    */
   public function getAbbreviationEchosConf() {
     $conf = $this->_makeConf();
-    $conf['short'] = 'shorthand-name';
+    $conf['abbreviation'] = 'shorthand-name';
     $x = new NamedTimeOffset($conf);
     $this->assertEquals('shorthand-name', $x->getAbbreviation());
   }

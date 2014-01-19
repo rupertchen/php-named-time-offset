@@ -1,17 +1,49 @@
 offsets:
   1:
-    name:  dummy-long-name-1
-    short: d1
-    offset: 3600
-  5:
-    name: dummy-long-name-2
-    short: d2
-    offset: 7200
-  42:
-    name: Pacific Standard Time
-    short: PST
-    offset: -28800
-  43:
     name: Pacific Daylight Time
+    short: PST
+    offset: -7
+  2:
+    name: Pacific Standard Time
     short: PDT
-    offset: -25200
+    offset: -8
+  3:
+    name: Eastern Daylight Time
+    short: EST
+    offset: -4
+  4:
+    name: Eastern Standard Time
+    short: EDT
+    offset: -5
+  5:
+    name: Central Daylight Time
+    short: CST
+    offset: -5
+  6:
+    name: Central Standard Time
+    short: CDT
+    offset: -6
+  7:
+    name: Mountain Daylight Time
+    short: MST
+    offset: -6
+  8:
+    name: Mountain Standard Time
+    short: MDT
+    offset: -7
+  9:
+    name: Alaska Daylight Time
+    short: AKST
+    offset: -8
+  10:
+    name: Alaska Standard Time
+    short: AKDT
+    offset: -9
+  11:
+    name: Hawaii-Aleutian Daylight Time
+    short: HADT
+    offset: -9
+  12:
+    name: Hawaii-Aleutian Standard Time
+    short: HAST
+    offset: -10
