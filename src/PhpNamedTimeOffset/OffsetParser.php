@@ -1,6 +1,7 @@
 <?php
 
 namespace PhpNamedTimeOffset;
+use InvalidArgumentException;
 
 /**
  * Parse the offset format
@@ -17,9 +18,13 @@ class OffsetParser {
    * @return int
    */
   public function toSeconds($source) {
+    if (!is_string($source)) {
+      throw new InvalidArgumentException(sprintf('Invalid offset type (%s)', gettype($source)));
+    }
+
     preg_match('/(?<sign>-)?(?<hours>\\d+)(?::(?<minutes>\\d+))?/', $source, $matches);
     if (!$matches) {
-      throw new \InvalidArgumentException('doh');
+      throw new InvalidArgumentException(sprintf('Invalid offset (%s)', $source));
     }
     $hours = intval($matches['hours']);
     if (isset($matches['minutes'])) {

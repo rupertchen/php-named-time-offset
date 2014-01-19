@@ -44,6 +44,25 @@ class OffsetParserTest extends \PHPUnit_Framework_TestCase {
   }
 
 
+  /**
+   * @test
+   * @dataProvider provider_throwsIfUnparsable
+   * @expectedException \InvalidArgumentException
+   */
+  public function throwsIfUnparsable($source) {
+    $this->_parser->toSeconds($source);
+  }
+
+
+  public function provider_throwsIfUnparsable() {
+    return array(
+      array(''),
+      array('this-is-not-parsible'),
+      array(array())
+    );
+  }
+
+
   protected function setUp() {
     $this->_parser = new OffsetParser();
   }
