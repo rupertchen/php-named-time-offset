@@ -3,7 +3,7 @@
 <phpunit bootstrap="./tests/bootstrap.php" colors="true" verbose="true">
   <testsuites>
     <testsuite name="PhpNamedTimeOffset Test Suite">
-      <directory suffix="Test.php">./tests/PhpNamedTimeOffset/Test/</directory>
+      <directory suffix="Test.php">./tests</directory>
     </testsuite>
   </testsuites>
 

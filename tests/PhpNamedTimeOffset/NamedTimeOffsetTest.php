@@ -1,8 +1,7 @@
 <?php
 
-namespace PhpNamedTimeOffset\Test;
+namespace PhpNamedTimeOffset;
 
-use PhpNamedTimeOffset\NamedTimeOffset;
 
 class NamedTimeOffsetTest extends \PHPUnit_Framework_TestCase {
 
@@ -12,6 +11,16 @@ class NamedTimeOffsetTest extends \PHPUnit_Framework_TestCase {
   public function creation() {
     $x = new NamedTimeOffset($this->_makeConf());
     $this->assertNotNull($x);
+  }
+
+
+  private function _makeConf() {
+    return array(
+      'id' => 0,
+      'name' => 'full-name',
+      'abbreviation' => 'xxx',
+      'offset' => 0
+    );
   }
 
 
@@ -66,16 +75,6 @@ class NamedTimeOffsetTest extends \PHPUnit_Framework_TestCase {
       array(0, 0, '+00:00'),
       array(3600, 3600, '+01:00'),
       array(-9000, -9000, '-02:30')
-    );
-  }
-
-
-  private function _makeConf() {
-    return array(
-      'id' => 0,
-      'name' => 'full-name',
-      'abbreviation' => 'xxx',
-      'offset' => 0
     );
   }
 }

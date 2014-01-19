@@ -1,11 +1,22 @@
 <?php
 
-namespace PhpNamedTimeOffset\Test;
+namespace PhpNamedTimeOffset;
 
-
-use PhpNamedTimeOffset\Factory;
 
 class FactoryTest extends \PHPUnit_Framework_TestCase {
+
+  /**
+   * @test
+   */
+  public function returnsSameInstanceForId() {
+    $factory = new Factory($this->_getDummyConfigs());
+    $obj1 = $factory->fromId(1);
+    $obj2 = $factory->fromId(1);
+    $obj3 = $factory->fromId(2);
+    $this->assertSame($obj1, $obj2);
+    $this->assertNotSame($obj1, $obj3);
+  }
+
 
   private function _getDummyConfigs() {
     return array(
@@ -25,19 +36,6 @@ class FactoryTest extends \PHPUnit_Framework_TestCase {
         'offset' => 7200
       )
     );
-  }
-
-
-  /**
-   * @test
-   */
-  public function returnsSameInstanceForId() {
-    $factory = new Factory($this->_getDummyConfigs());
-    $obj1 = $factory->fromId(1);
-    $obj2 = $factory->fromId(1);
-    $obj3 = $factory->fromId(2);
-    $this->assertSame($obj1, $obj2);
-    $this->assertNotSame($obj1, $obj3);
   }
 
 
