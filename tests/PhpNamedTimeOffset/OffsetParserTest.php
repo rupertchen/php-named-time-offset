@@ -5,7 +5,7 @@ namespace PhpNamedTimeOffset;
 
 class OffsetParserTest extends \PHPUnit_Framework_TestCase {
 
-  /** @var OffsetParser */
+  /** @var OffsetFieldParser */
   private $_parser;
 
 
@@ -68,7 +68,7 @@ class OffsetParserTest extends \PHPUnit_Framework_TestCase {
 
 
   protected function setUp() {
-    $this->_parser = new OffsetParser();
+    $this->_parser = new OffsetFieldParser();
   }
 
 

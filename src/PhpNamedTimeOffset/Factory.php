@@ -30,6 +30,11 @@ class Factory {
   }
 
 
+  /**
+   * Get the default configuration file path
+   *
+   * @return string
+   */
   public static function GetDefaultConfigFile() {
     return __DIR__ . '/offsets.inc';
   }

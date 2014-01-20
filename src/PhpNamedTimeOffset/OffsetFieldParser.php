@@ -7,7 +7,7 @@ use InvalidArgumentException;
 /**
  * Parse the offset format
  */
-class OffsetParser {
+class OffsetFieldParser {
   const SECONDS_PER_HOUR = 3600;
   const SECONDS_PER_MINUTE = 60;
 
