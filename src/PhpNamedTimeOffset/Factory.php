@@ -20,12 +20,28 @@ class Factory {
 
 
   /**
+   * Return a new instance of the default factory
+   *
+   * @return Factory
+   */
+  public static function CreateDefault() {
+    $configs = require(self::GetDefaultConfigFile());
+    return new Factory($configs);
+  }
+
+
+  public static function GetDefaultConfigFile() {
+    return __DIR__ . '/offsets.inc';
+  }
+
+
+  /**
    * @param int $id
    * @return NamedTimeOffset
    */
   public function fromId($id) {
     if (!isset($this->_offset_cache[$id])) {
-      if(!isset($this->_offset_configs[$id])) {
+      if (!isset($this->_offset_configs[$id])) {
         throw new InvalidArgumentException('Unknown ID (' . $id . ')');
       }
       $offset_config = $this->_offset_configs[$id];
@@ -43,16 +59,5 @@ class Factory {
    */
   public function getIds() {
     return array_keys($this->_offset_configs);
-  }
-
-
-  /**
-   * Return a new instance of the default factory
-   *
-   * @return Factory
-   */
-  public static function CreateDefault() {
-    $configs = require(__DIR__ . '/offsets.inc');
-    return new Factory($configs);
   }
 }

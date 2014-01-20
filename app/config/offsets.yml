@@ -1,51 +1,72 @@
 # TODO: Group entries by offset
 # TODO: Keep DST and other variants with the standard
+# Group entries by their offset.
+#
+# ID Format
+# Although IDs are arbitrary, the following convention for assign IDs is used.
+#   - IDs are 7 digits long
+#   - The first digit is "1" if the offset is non-negative and "2" if negative
+#   - The next two digits represent the absolute offset in hours
+#   - The last four digits are monotonically increasing as entries are added
+# TODO: Import all values from http://www.timeanddate.com/library/abbreviations/timezones/
 offsets:
-  1:
-    name: Pacific Daylight Time
-    short: PDT
-    offset: -7
-  2:
-    name: Pacific Standard Time
-    short: PST
-    offset: -8
-  3:
+  - id: 1000000
+    name: Coordinated Universal Time
+    short: UTC
+    offset: 0
+  - id: 1090000
+    name: Korea Standard Time
+    short: KST
+    offset: 9
+  - id: 1090001
+    name: Japan Standard Time
+    short: JST
+    offset: 9
+  - id: 2040000
     name: Eastern Daylight Time
     short: EDT
     offset: -4
-  4:
+  - id: 2050000
     name: Eastern Standard Time
     short: EST
     offset: -5
-  5:
+  - id: 2050001
     name: Central Daylight Time
     short: CDT
     offset: -5
-  6:
+  - id: 2060000
     name: Central Standard Time
     short: CST
     offset: -6
-  7:
+  - id: 2060001
     name: Mountain Daylight Time
     short: MDT
     offset: -6
-  8:
+  - id: 2070000
     name: Mountain Standard Time
     short: MST
     offset: -7
-  9:
+  - id: 2070001
+    name: Pacific Daylight Time
+    short: PDT
+    offset: -7
+  - id: 2080000
+    name: Pacific Standard Time
+    short: PST
+    offset: -8
+  - id: 2080001
     name: Alaska Daylight Time
     short: AKDT
     offset: -8
-  10:
+  - id: 2090000
     name: Alaska Standard Time
     short: AKST
     offset: -9
-  11:
+  - id: 2090001
     name: Hawaii-Aleutian Daylight Time
     short: HADT
     offset: -9
-  12:
+  - id: 2100000
     name: Hawaii-Aleutian Standard Time
     short: HAST
     offset: -10

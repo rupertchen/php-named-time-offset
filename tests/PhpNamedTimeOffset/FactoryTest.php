@@ -63,19 +63,6 @@ class FactoryTest extends \PHPUnit_Framework_TestCase {
   /**
    * @test
    */
-  public function noDupeIds() {
-    $factory = Factory::CreateDefault();
-    $used_ids = array();
-    foreach ($factory->getIds() as $id) {
-      $this->assertFalse(isset($used_ids[$id]));
-      $used_ids[$id] = true;
-    }
-  }
-
-
-  /**
-   * @test
-   */
   public function verifyAllKnownOffsets() {
     $factory = Factory::CreateDefault();
     $dump = array();

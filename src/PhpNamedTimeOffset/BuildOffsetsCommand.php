@@ -31,11 +31,16 @@ class BuildOffsetsCommand extends Command {
 
 
   protected function execute(InputInterface $input, OutputInterface $output) {
+    // TODO: extract this YAML parser, test dupe id and config building
     $yml = file_get_contents($input->getArgument(self::ARG_SOURCE));
     $parsed = $this->_yaml_parser->parse($yml);
     $configs = array();
-    foreach ($parsed['offsets'] as $key => $source) {
-      $configs[$key] = array(
+    foreach ($parsed['offsets'] as $source) {
+      $id = $source['id'];
+      if (isset($configs[$id])) {
+        throw new \InvalidArgumentException("Duplicate ID found ($id)");
+      }
+      $configs[$id] = array(
         'name' => $source['name'],
         'abbreviation' => $source['short'],
         'offset' => $this->_offset_parser->toSeconds($source['offset'])

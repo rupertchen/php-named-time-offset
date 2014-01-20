@@ -17,7 +17,7 @@ class OffsetsYmlTest extends \PHPUnit_Framework_TestCase {
 
 
   private function _getPhpMd5() {
-    $filepath = __DIR__ . '/../../src/PhpNamedTimeOffset/offsets.inc';
+    $filepath = Factory::GetDefaultConfigFile();
     $handle = @fopen($filepath, 'r');
     if ($handle) {
       while (($buffer = fgets($handle, 1024)) !== false) {
