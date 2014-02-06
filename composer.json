@@ -1,8 +1,9 @@
 {
   "name": "rupertchen/php-named-time-offset",
   "description": "PHP library for named time offsets",
+  "keywords": ["date", "GMT", "offset", "time", "timezone", "UTC"],
   "version": "0.1.0",
-  "homepage": "https://github.com/rupertchen/php-named-time-offset",
+  "homepage": "http://github.com/rupertchen/php-named-time-offset",
   "license": "MIT",
   "authors": [
     {

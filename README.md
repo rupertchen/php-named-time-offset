@@ -17,6 +17,9 @@ and remember which offset for later display. Although abbreviations are the
 most common way for people to work with offsets, they are not unique. The
 full offset names are unique, but they are verbose and inefficient for storage.
 
+This library attempts to address the issue by providing unique numeric
+constants for storage mapped to full names and abbreviations for display.
+
 ## How To Run The Tests
 From the command line, run:
 
